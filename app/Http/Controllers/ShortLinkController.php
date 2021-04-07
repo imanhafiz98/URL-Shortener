@@ -28,10 +28,6 @@ class ShortLinkController extends Controller
     public function store(Request $request)
     {
 
-        $request->validate([
-            'link' => 'required|url']);
-        }
-
            if($request->has('checkauto'))
            {
                 $request->validate([
