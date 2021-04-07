@@ -114,7 +114,7 @@ body {
                             <td><a href="{{ route('shorten.link', $shortlink->code) }}" target="_blank">{{ route('shorten.link', $shortlink->code) }}</a></td>
                             <td>{{ $shortlink->link }}</td>
                             <td>{{ $shortlink->visits }}</td>
-                            <td><button type="submit" class="btn btn-danger btn-sm" >Delete</button></td>
+                            <td><button type="submit" class="btn btn-danger btn-sm" >Remove</button></td>
                         </tr>
                         </form>
                     @endforeach
