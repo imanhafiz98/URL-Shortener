@@ -75,7 +75,7 @@ body {
             <label for="checkauto"> Auto Generate Code</label><br>
             
             <div class="input-group-append">
-                <button class="btn btn-primary"  type="submit">Generate</button>
+                <button class="btn btn-primary"  type="submit">Generate Code</button>
               </div>
         </form>
       </div>
