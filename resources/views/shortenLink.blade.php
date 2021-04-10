@@ -70,6 +70,7 @@ body {
             <input type="text" name="code" class="form-control" placeholder="Enter Code">
             </div>
 
+
             <input type="checkbox" id="checkauto" name="checkauto" value="Auto Generate">
             <label for="checkauto"> Auto Generate Code</label><br>
             
