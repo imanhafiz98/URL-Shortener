@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class ShortLink extends Model
 {
-    $protected = [
+    protected $fillable = [
         'code',
         'link',
         'visits',
