@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ShortLinkController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,10 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('', 'ShortLinkController@index');
 
-Route::get('generate-shorten-link', 'App\Http\Controllers\ShortLinkController@index');
-Route::post('generate-shorten-link', 'App\Http\Controllers\ShortLinkController@store')->name('generate.shorten.link.post');
+Route::get('generate-shorten-link', 'ShortLinkController@index');
+Route::post('generate-shorten-link', 'ShortLinkController@store')->name('generate.shorten.link.post');
     
-Route::get('{shortlink:code}', 'App\Http\Controllers\ShortLinkController@shortenLink')->name('shorten.link');
+Route::get('{shortlink:code}', 'ShortLinkController@shortenLink')->name('shorten.link');
 
-Route::delete('generate-shorten-link/{shortlink}/delete', 'App\Http\Controllers\ShortLinkController@destroy')->name('generate.shorten.link.destroy');
+Route::delete('generate-shorten-link/{shortlink}/delete', 'ShortLinkController@destroy')->name('generate.shorten.link.destroy');
